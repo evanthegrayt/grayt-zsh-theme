@@ -13,7 +13,7 @@ Once installed, set the theme in your `~/.zshrc` file.
 export ZSH_THEME="grayt"
 ```
 Re-source your `~/.zshrc`
-```
+```sh
 . ~/.zshrc
 ```
 
@@ -21,8 +21,8 @@ Re-source your `~/.zshrc`
 Here's a few examples, including a non-`git` directory, a clean `git` directory,
 an un-clean `git` directory, and a non-zero return code.
 I'm using [iTerm2](https://www.iterm2.com/) on MacOS, with
-
 the [Hack font](https://sourcefoundry.org/hack/).
+
 ![](resource/grayt-zsh-theme.jpg)
 
 ## Issues and Reporting Bugs
