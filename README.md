@@ -8,11 +8,20 @@ theme directly in the `$ZSH_CUSTOM/themes` directory.
 git clone https://github.com/evanthegrayt/grayt-zsh-theme.git $ZSH_CUSTOM/themes
 ln -s $ZSH_CUSTOM/themes/grayt-zsh-theme/grayt.zsh-theme $ZSH_CUSTOM/themes
 ```
+Once installed, set the theme in your `~/.zshrc` file.
+```sh
+export ZSH_THEME="grayt"
+```
+Re-source your `~/.zshrc`
+```
+. ~/.zshrc
+```
 
 ## Screenshots
 Here's a few examples, including a non-`git` directory, a clean `git` directory,
 an un-clean `git` directory, and a non-zero return code.
 I'm using [iTerm2](https://www.iterm2.com/) on MacOS, with
+
 the [Hack font](https://sourcefoundry.org/hack/).
 ![](resource/grayt-zsh-theme.jpg)
 
