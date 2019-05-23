@@ -17,6 +17,10 @@ Re-source your `~/.zshrc`
 . ~/.zshrc
 ```
 
+### Dependencies
+If you want the `git` branch to truncate, you'll need to install
+[omz-git](https://github.com/tnwinc/omz-git).
+
 ## Screenshots
 Here's a few examples, including a non-`git` directory, a clean `git` directory,
 an un-clean `git` directory, and a non-zero return code. As you can see, if the
