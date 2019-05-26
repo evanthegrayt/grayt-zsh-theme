@@ -30,6 +30,14 @@ the [Hack font](https://sourcefoundry.org/hack/).
 
 ![](resource/grayt-zsh-theme.jpg)
 
+## Customization
+You can change the main prompt color by adding the following line to your
+`~/.zshrc`:
+
+```zsh
+GRAYT_PROMPT_COLOR=red # This will make the prompt red
+```
+
 ## Issues and Reporting Bugs
 Please [submit an
 issue](https://github.com/evanthegrayt/grayt-zsh-theme/issues/new) if you find
