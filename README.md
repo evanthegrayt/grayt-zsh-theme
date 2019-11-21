@@ -28,7 +28,7 @@ an un-clean `git` directory, and a non-zero return code. As you can see, if the
 I'm using [iTerm2](https://www.iterm2.com/) on MacOS, with
 the [Hack font](https://sourcefoundry.org/hack/).
 
-![](resource/grayt-zsh-theme.jpg)
+![](https://user-images.githubusercontent.com/12698076/69295476-0220dd00-0bd1-11ea-9f46-0ba574d09742.jpg)
 
 ## Customization
 You can change the main prompt color by adding the following line to your
