@@ -6,6 +6,12 @@ setopt prompt_subst
 GRAYT_PROMPT_COLOR=${GRAYT_PROMPT_COLOR:-'blue'}
 GRAYT_PROMPT_TEXT_COLOR=${GRAYT_PROMPT_TEXT_COLOR:-'grey'}
 
+__grayt_theme_dir=${${(%):-%x}:A:h}
+if [[ -r "$__grayt_theme_dir/grayt-repo-refresh.zsh" ]]; then
+  source "$__grayt_theme_dir/grayt-repo-refresh.zsh"
+fi
+unset __grayt_theme_dir
+
 function __grayt_git() {
   GIT_OPTIONAL_LOCKS=0 command git "$@"
 }
