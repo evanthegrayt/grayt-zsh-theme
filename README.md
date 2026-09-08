@@ -138,7 +138,7 @@ git clone https://github.com/evanthegrayt/zsh-ref-fresh.git ~/.zsh/zsh-ref-fresh
 
 ```zsh
 REF_FRESH_ENABLE=1
-source ~/.zsh/zsh-ref-fresh/ref-fresh.zsh
+source ~/.zsh/zsh-ref-fresh/zsh-ref-fresh.zsh
 source ~/.zsh/grayt-zsh-theme/grayt.zsh-theme
 ```
 
