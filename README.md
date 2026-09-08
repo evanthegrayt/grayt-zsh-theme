@@ -5,8 +5,8 @@ This prompt focuses on:
 
 - Useful context for everyday development without a crowded prompt.
 - Simple styling that stays readable instead of becoming decoration.
-- Optional repo refreshes, so Git branch and status changes made in another
-  terminal or application can appear without pressing Enter.
+- Optional idle Git refreshes with
+  [Ref Fresh](https://github.com/evanthegrayt/zsh-ref-fresh).
 - A stable two-line layout that keeps the command cursor predictable, even when
   the current directory or git branch name is long.
 - A few practical customization options without a pile of configuration.
@@ -85,6 +85,10 @@ This theme is standalone. It uses zsh's built-in prompt expansion and color
 helpers, and it shells out to `git` when the current directory is inside a
 repository. No zsh framework or git prompt plugin is required.
 
+For idle prompt refreshes when Git branch or status changes happen in another
+terminal or application, use the optional
+[Ref Fresh](https://github.com/evanthegrayt/zsh-ref-fresh) plugin.
+
 ## Customization
 Set customization variables before sourcing the theme. In the following
 examples, what you see is already the default.
@@ -122,26 +126,24 @@ GRAYT_HIDE_STATUS=0
 GRAYT_HIDE_DIRTY=0
 ```
 
-### Repo Refresh
-By default, the prompt updates when zsh renders a new prompt. If you install
-[`fswatch`](https://github.com/emcrisostomo/fswatch), you can opt into idle
-refreshes so Git branch and status changes made in another terminal are
-reflected without pressing Enter.
+### Idle Git Refreshes
+By default, grayt updates when zsh renders a new prompt. If you want branch and
+dirty-status changes from another terminal to appear while the prompt is idle,
+install [Ref Fresh](https://github.com/evanthegrayt/zsh-ref-fresh) and load it
+before this theme.
 
-```zsh
-GRAYT_REPO_REFRESH=1
-GRAYT_REPO_REFRESH_LATENCY=0.5
+```sh
+git clone https://github.com/evanthegrayt/zsh-ref-fresh.git ~/.zsh/zsh-ref-fresh
 ```
 
-`GRAYT_REPO_REFRESH_LATENCY` is passed to `fswatch` as a number of seconds. The
-default is `0.5`. To disable repo refreshes again, set `GRAYT_REPO_REFRESH=0` or
-leave it unset.
+```zsh
+REF_FRESH_ENABLE=1
+source ~/.zsh/zsh-ref-fresh/ref-fresh.zsh
+source ~/.zsh/grayt-zsh-theme/grayt.zsh-theme
+```
 
-The feature is simple: it starts one watcher for the current Git repository,
-requests a prompt redraw when that repository changes, and stops when you leave
-the repository or exit the shell. Branch switches use the same watcher as dirty
-status changes; no extra process is needed. If `fswatch` is not available, the
-theme falls back to the normal prompt behavior.
+Ref Fresh is separate on purpose: grayt stays standalone, and the refresh
+behavior can be used with other zsh prompts too.
 
 ## Issues and Reporting Bugs
 Please [submit an
