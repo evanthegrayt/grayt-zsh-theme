@@ -5,7 +5,7 @@ This prompt focuses on:
 
 - Useful context for everyday development without a crowded prompt.
 - Simple styling that stays readable instead of becoming decoration.
-- Optional idle Git refreshes with
+- Optional idle Git refreshes when used with
   [Ref Fresh](https://github.com/evanthegrayt/zsh-ref-fresh).
 - A stable two-line layout that keeps the command cursor predictable, even when
   the current directory or git branch name is long.
