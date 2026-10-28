@@ -1,4 +1,9 @@
 # grayt-zsh-theme
+
+[![Shell: zsh](https://img.shields.io/static/v1?label=shell&message=zsh&color=4EAA25&style=flat&logo=shell&logoColor=white)](https://www.zsh.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/evanthegrayt/grayt-zsh-theme/actions/workflows/tests.yml/badge.svg)](https://github.com/evanthegrayt/grayt-zsh-theme/actions/workflows/tests.yml)
+
 A simple, yet informative, zsh theme.
 
 This prompt focuses on:
