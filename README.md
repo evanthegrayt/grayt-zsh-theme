@@ -145,6 +145,15 @@ source ~/.zsh/grayt-zsh-theme/grayt.zsh-theme
 Ref Fresh is separate on purpose: grayt stays standalone, and the refresh
 behavior can be used with other zsh prompts too.
 
+## Tests
+
+The test suite requires [Bats](https://github.com/bats-core/bats-core), zsh,
+Git, and sed. From the repository root, run:
+
+```sh
+bats tests
+```
+
 ## Issues and Reporting Bugs
 Please [submit an
 issue](https://github.com/evanthegrayt/grayt-zsh-theme/issues/new) if you find
